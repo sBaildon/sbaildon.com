@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"sbaildon",
+				"sean@sbaildon"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 160.0,
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Quick Add"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"q a",
+				"Git: Quick Add"
+			],
+			[
+				"commi",
+				"Git: Quick Commit"
+			],
+			[
+				"com",
+				"Git: Quick Commit"
+			],
+			[
+				"Push",
+				"Git: Push"
+			],
+			[
+				"qui add",
+				"Git: Quick Add"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"qu a",
+				"Git: Quick Add"
+			],
+			[
+				"comi",
+				"Git: Quick Commit"
+			],
+			[
+				"qui ad",
+				"Git: Quick Add"
+			],
+			[
+				"quick co",
+				"Git: Quick Commit"
+			],
+			[
+				"quick ad",
+				"Git: Quick Add"
+			],
+			[
+				"quick com",
+				"Git: Quick Commit"
+			],
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"quick ",
+				"Git: Quick Commit"
+			],
+			[
+				"package cont",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 128.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/index.html",
+		"/E/Users/Sean/AppData/Local/Temp/7zO8D1513D8/stylesheet.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/work.html",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/reset.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/title.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/links.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/work.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/index.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/links.html",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/common.css",
+		"/C/Users/Sean/Dropbox/University/Year 3/SCC 300/New Text Document.txt",
+		"/E/Users/Sean/Desktop/mingw-w64-v3.0.0/AUTHORS",
+		"/E/Users/Sean/AppData/Local/Temp/7zO03C1A124/noun_project_409.svg",
+		"/E/Users/Sean/AppData/Roaming/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/E/Users/Sean/AppData/Roaming/Sublime Text 3/Packages/Trimmer/Default (Windows).sublime-keymap",
+		"/E/Users/Sean/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/img/octo.svg",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/pace.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/files/trade-gothic.svg",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/workspace.sublime-workspace",
+		"/E/Programs/Git/etc/profile",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/about.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/banner.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/footer.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/css/projects.css",
+		"/E/Users/Sean/Dropbox/Projects/sBaildon/about.html",
+		"/C/Users/Sean/Dropbox/Projects/sBaildon/project.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"files",
+			"p,",
+			"0.2",
+			"h2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.597669256382,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.git-commit":
+	{
+		"height": 102.0
+	},
+	"output.git-push":
+	{
+		"height": 102.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
