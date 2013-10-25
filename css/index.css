@@ -1,5 +1,6 @@
 .flexer {
 	display:			flex;
+  	display:			-webkit-flex; 
 	height:				85%;
 }
 
