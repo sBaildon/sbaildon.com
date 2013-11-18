@@ -3,58 +3,18 @@
 
 	<head>
 		<title>Sean Baildon</title>
+		<meta name="description" content="The home of Sean Baildon on the web">
 		<link href="min/min.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="css/common.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body>
+	<body>	
 		<div class="flexer">
 			<div class="content">
 				<p><a href="https://github.com/sBaildon">Sean Baildon</a> - A Computer Science undergrad working hard to find a job I love.</p>
-				<a href="mailto:hi@sbaildon.com"><img id="email" class="svg" src="img/email.svg" /></a>
+				<a href="mailto:hi@sbaildon.com"><img id="email" class="svg" src="img/email.svg" alt="Email Icon"/></a>
 			</div>
 		</div>
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script>		
-			/* Shoutouts Drew Baker and his Stack Overflow answer (http://goo.gl/5mcGX)
-			 * for this sexy piece of code.
-			 * Replaces all external svg files to be inline, allowing for DOM manipulation
-			 */
-
-			jQuery(document).ready(function() {
-
-				jQuery('img.svg').each(function() {
-					var $img = jQuery(this);
-					var imgID = $img.attr('id');
-					var imgClass = $img.attr('class');
-					var imgURL = $img.attr('src');
-
-					jQuery.get(imgURL, function(data) {
-						// Get the SVG tag, ignore the rest
-						var $svg = jQuery(data).find('svg');
-
-						// Add replaced image's ID to the new SVG
-						if(typeof imgID !== 'undefined') {
-							$svg = $svg.attr('id', imgID);
-						}
-						// Add replaced image's classes to the new SVG
-						if(typeof imgClass !== 'undefined') {
-							$svg = $svg.attr('class', imgClass+' replaced-svg');
-						}
-
-						// Remove any invalid XML tags as per http://validator.w3.org
-						$svg = $svg.removeAttr('xmlns:a');
-
-						// Replace image with new SVG
-						$img.replaceWith($svg);
-					}, 'xml');
-				});
-
-			});
-		</script>
-
 	</body>
 
 </html>

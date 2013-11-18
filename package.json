@@ -1,0 +1,22 @@
+{
+  "name": "sbaildon.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "~0.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sBaildon/sbaildon.git"
+  },
+  "author": "Sean Baildon",
+  "bugs": {
+    "url": "https://github.com/sBaildon/sbaildon/issues"
+  }
+}
