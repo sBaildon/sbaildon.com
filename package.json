@@ -2,21 +2,23 @@
   "name": "sbaildon.com",
   "version": "1.0.0",
   "description": "My personal website",
+  "main": "Gruntfile.js",
   "dependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
   },
-  "devDependencies": {
-    "grunt-contrib-cssmin": "~0.6.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sBaildon/sbaildon.git"
+    "url": "https://github.com/sBaildon/sbaildon.com.git"
   },
-  "author": "Sean Baildon",
+  "author": "Sean Baildon <sean@sbaildon.com>",
+  "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/sBaildon/sbaildon/issues"
+    "url": "https://github.com/sBaildon/sbaildon.com/issues"
   }
 }
