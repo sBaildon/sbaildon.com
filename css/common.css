@@ -1,6 +1,6 @@
 a[href^="http"] {
 	text-decoration:	none;
-	color:			#f5f5f5;
+	color:			#fbfdfd;
 	padding:		2px;
 	transition:		0.1s ease;
 }
@@ -22,23 +22,12 @@ body {
 	font-size:		1.4em;
 	font-family:		'Bitter', serif;
 	line-height:		165%;
-	background:		#9acab6;
+	background:		#88cabe;
+	color:			#406b63;
 }
 
 body, html {
 	height:			100%;
-}
-
-@font-face {
-    font-family: 'Junction';
-    src: url('../fonts/Junction-webfont.eot');
-    src: url('../fonts/Junction-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Junction-webfont.woff') format('woff'),
-         url('../fonts/Junction-webfont.ttf') format('truetype'),
-         url('../fonts/Junction-webfont.svg#junction_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /* Smartphones */
