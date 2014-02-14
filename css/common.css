@@ -6,8 +6,8 @@ a[href^="http"] {
 }
 
 a:hover[href^="http"] {
-	background:		#8bbda7;
-	transition:		0.1s ease;
+	text-decoration: 	underline;
+	transition:		0.5s ease;
 }
 
 ::selection {
@@ -28,11 +28,4 @@ body {
 
 body, html {
 	height:			100%;
-}
-
-/* Smartphones */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	font:			2.5em;
 }
