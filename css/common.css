@@ -1,13 +1,13 @@
-a[href^="http"] {
+a {
 	text-decoration:	none;
 	color:			#fbfdfd;
-	padding:		2px;
-	transition:		0.1s ease;
+	padding:		0 2px -10px 2px;
+	transition:		0.2s ease;
 }
 
-a:hover[href^="http"] {
-	text-decoration: 	underline;
-	transition:		0.5s ease;
+a:hover {
+	transition:		0.2s ease;
+	border-bottom:		1px dotted #fbfdfd;
 }
 
 ::selection {

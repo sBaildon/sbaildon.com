@@ -4,6 +4,19 @@
 	height:			85%;
 }
 
+.small {
+	font-size:		0.8em;
+	padding-top:		25px;
+}
+
+.small a {
+	opacity:		0.7;
+}
+
+.small a:hover {
+	opacity:		1;
+}
+
 .content {
 	text-align:		center;
 	width:			95%;
@@ -12,6 +25,15 @@
 }
 
 img, svg {
-	margin-top:		30px;
+	margin-top:		10px;
 	height:			50px;
+
+	animation:		popout 0.2s;
+	-webkit-animation:	popout 0.2s;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 }
