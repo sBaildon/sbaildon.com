@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: #fbfdfd;
+  padding: 0 2px -10px 2px;
+  transition: 0.2s ease; }
+  a:hover {
+    transition: 0.2s ease;
+    border-bottom: 1px dotted #fbfdfd; }
+  a:visited {
+    color: #fbfdfd; }
+
+::-moz-selection {
+  background: rgba(75, 97, 87, 0.2);
+  /* #4b6157 */ }
+
+::selection {
+  background: rgba(75, 97, 87, 0.2);
+  /* #4b6157 */ }
+
+body {
+  font-size: 1.4em;
+  font-family: 'Bitter', serif;
+  line-height: 165%;
+  background: #88cabe;
+  color: #406b63; }
+
+body, html {
+  height: 100%; }
