@@ -6,10 +6,6 @@
 .links {
   font-size: 0.8em;
   padding-top: 25px; }
-  .links a {
-    opacity: 0.7; }
-  .links a:hover {
-    opacity: 1; }
 
 .content {
   text-align: center;

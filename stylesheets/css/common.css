@@ -9,13 +9,16 @@ a {
   a:visited {
     color: #fbfdfd; }
 
+a.secondary {
+  opacity: 0.7; }
+  a.secondary:hover {
+    opacity: 1; }
+
 ::-moz-selection {
-  background: rgba(75, 97, 87, 0.2);
-  /* #4b6157 */ }
+  background: #4b6157; }
 
 ::selection {
-  background: rgba(75, 97, 87, 0.2);
-  /* #4b6157 */ }
+  background: #4b6157; }
 
 body {
   font-size: 1.4em;
