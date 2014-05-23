@@ -17,8 +17,16 @@ a {
         }
 }
 
+a.secondary {
+        opacity: 0.7;
+
+        &:hover {
+                opacity: 1;
+        }
+}
+
 @include selection {
-        background: rgba(75,97,87,0.2); /* #4b6157 */
+        background: $colour-selection;
 }
 
 body {
