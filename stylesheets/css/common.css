@@ -15,10 +15,10 @@ a.secondary {
     opacity: 1; }
 
 ::-moz-selection {
-  background: #4b6157; }
+  background: rgba(75, 97, 87, 0.2); }
 
 ::selection {
-  background: #4b6157; }
+  background: rgba(75, 97, 87, 0.2); }
 
 body {
   font-size: 1.4em;
