@@ -13,3 +13,10 @@
         max-width: 500px;
 	padding: 6em 0 0 6em;
 }
+
+@media only screen and (max-device-width: 800px) {
+	.content {
+		padding: 1em 0 0 1em;
+	}
+
+}
