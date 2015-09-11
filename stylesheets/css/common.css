@@ -1,13 +1,13 @@
 a {
   text-decoration: none;
-  color: #fbfdfd;
+  color: #2AA198;
   padding: 0 2px -10px 2px;
   transition: 0.2s ease; }
   a:hover {
     transition: 0.2s ease;
-    border-bottom: 1px dotted #fbfdfd; }
+    border-bottom: 1px dotted #2AA198; }
   a:visited {
-    color: #fbfdfd; }
+    color: #2AA198; }
 
 a.secondary {
   opacity: 0.7; }
@@ -22,10 +22,10 @@ a.secondary {
 
 body {
   font-size: 1.4em;
-  font-family: 'Bitter', serif;
+  font-family: 'Source Code Pro', serif;
   line-height: 165%;
-  background: #88cabe;
-  color: #406b63; }
+  background: #FDF6E3;
+  color: #93A1A1; }
 
 body, html {
   height: 100%; }
