@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 var paths = {
         styles: {
                 sass: {
-                        src: 'stylesheets/sass/*.scss',
+                        src: 'stylesheets/sass/**/*.scss',
                         dest: 'stylesheets/css'
                 },
                 css: {
