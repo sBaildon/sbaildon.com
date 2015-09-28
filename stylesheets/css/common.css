@@ -22,7 +22,7 @@ a.secondary {
 
 body {
   font-size: 1.4em;
-  font-family: 'Source Code Pro', serif;
+  font-family: 'Source Code Pro', monospace;
   line-height: 165%;
   background: #F1F1EA;
   color: #4E443B; }
