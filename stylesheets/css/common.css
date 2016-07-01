@@ -4,8 +4,8 @@ a {
   padding: 0 2px -10px 2px;
   transition: 0.2s ease; }
   a:hover {
-    transition: 0.2s ease;
-    border-bottom: 1px dotted #F04E32; }
+    transform: 1.2s linear;
+    text-decoration: underline; }
   a:visited {
     color: #F04E32; }
 

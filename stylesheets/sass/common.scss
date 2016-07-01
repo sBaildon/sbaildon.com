@@ -8,8 +8,8 @@ a {
         transition: 0.2s ease;
 
         &:hover {
-                transition: 0.2s ease;
-                border-bottom: 1px dotted $colour-link-unvisited;
+                transform: 1.2s linear;
+								text-decoration: underline;
         }
 
         &:visited {
