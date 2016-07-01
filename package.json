@@ -1,0 +1,37 @@
+{
+  "name": "baildon.co",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "globule": "^0.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "node-sass": "^3.3.3",
+    "normalize": "^0.3.1",
+    "npmconf": "^2.1.2",
+    "sshpk": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sBaildon/baildon.co.git"
+  },
+  "keywords": [
+    "website",
+    "personal"
+  ],
+  "author": "Sean Baildon <sean@baildon.co>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sBaildon/baildon.co/issues"
+  },
+  "homepage": "https://github.com/sBaildon/baildon.co#readme"
+}
