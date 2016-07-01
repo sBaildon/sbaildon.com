@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-var cssmin = require('gulp-minify-css');
+var cssmin = require('gulp-clean-css');
 var concat = require('gulp-concat');
 
 var paths = {
@@ -24,9 +24,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('cssmin', function() {
-        gulp.src(paths.styles.css.src)
-          .pipe(cssmin())
-          .pipe(concat('main.min.css'))
+	return gulp.src(paths.styles.css.src)
+	  .pipe(cssmin({}))
+	  .pipe(concat('main.min.css'))
           .pipe(gulp.dest(paths.styles.css.dest));
 });
 
