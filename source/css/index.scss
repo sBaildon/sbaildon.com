@@ -1,0 +1,21 @@
+p {
+	margin-top: 0.4em;
+}
+
+#links {
+	margin-top: 3em;
+
+	font-size: 0.8em;
+
+	a:not(:hover) {
+		opacity: 0.7;
+	}
+
+	a:not(:first-child) {
+		margin-left: 0.5em;
+	}
+
+	a:not(:last-child) {
+		margin-right: 0.5em;
+	}
+}

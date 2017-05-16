@@ -1,0 +1,17 @@
+extends layouts/default.pug
+
+block content
+	main(itemscope itemtype="http://schema.org/Person")
+		a(href="https://twitter.com/sBaildon")
+			span(itemprop="givenName") Sean #[span(itemprop="familyName") Baildon]
+
+		p.
+			#[span(itemprop="jobTitle") Software Engineer] working in
+			#[span(itemprop="homeLocation") Cheltenham].
+
+		div#links
+			a(href="mailto:sean@baildon.co" itemprop="email") Email
+			span /
+			a(href="https://github.com/sBaildon") Github
+			span /
+			a(href="resume.pdf") Resume

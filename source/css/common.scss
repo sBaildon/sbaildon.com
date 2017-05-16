@@ -1,0 +1,47 @@
+@import "include-media";
+
+@import "imports/colours";
+@import "imports/mixins";
+
+html {
+	font-family: "Inconsolata";
+	color: $colour--body;
+	background-color: $colour--background;
+
+	font-size: 1.4em;
+
+	@include media("<desktop") {
+		font-size: 4em;
+	}
+
+	@include media("<desktop", "landscape") {
+		font-size: 2em;
+	}
+}
+
+main {
+	margin: 6.5em 0 0 6.5em;
+
+	@include media("<desktop") {
+		margin: 1em;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+
+	color: $colour--link-unvisited;
+
+	&:visited {
+		color: $colour--link-visited;
+	}
+}
+
+@include selection() {
+	background-color: rgba($colour--selection, 0.2);
+}
