@@ -3,23 +3,6 @@
   "version": "1.0.0",
   "description": "Personal website",
   "main": "gulpfile.js",
-  "dependencies": {
-    "globule": "^0.2.0",
-    "gulp": "^3.9.0",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
-    "node-sass": "^3.3.3",
-    "normalize": "^0.3.1",
-    "npmconf": "^2.1.2",
-    "sshpk": "^1.7.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sBaildon/baildon.co.git"
@@ -33,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/sBaildon/baildon.co/issues"
   },
-  "homepage": "https://github.com/sBaildon/baildon.co#readme"
+  "devDependencies": {
+    "include-media": "^1.4.9",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
 }
