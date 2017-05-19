@@ -3,7 +3,9 @@ extends layouts/default.pug
 block content
 	main(itemscope itemtype="http://schema.org/Person")
 		a(href="https://twitter.com/sBaildon")
-			#[span(itemprop="givenName") Sean] #[span(itemprop="familyName") Baildon]
+			span(itemprop="givenName") Sean
+			=" "
+			span(itemprop="familyName") Baildon
 
 		p.
 			#[span(itemprop="jobTitle") Software Engineer] working in
