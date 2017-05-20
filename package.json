@@ -2,7 +2,6 @@
   "name": "baildon.co",
   "version": "1.0.0",
   "description": "Personal website",
-  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sBaildon/baildon.co.git"
