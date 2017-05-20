@@ -32,6 +32,11 @@ $(RESUME): $(SOURCE_DIR)/resume.pdf
 node_modules/.yarn-integrity: package.json
 	yarn install
 
+.PHONY: devserver
+devserver:
+	$(eval IP_ADDR := $(shell ip route get 8.8.8.8 | awk '{print $$NF; exit}'))
+	devd --address $(IP_ADDR) -ol static/
+
 .PHONY: clean
 clean:
 	rm -rf node_modules
