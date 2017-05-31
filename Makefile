@@ -15,9 +15,7 @@ SCSS_FLAGS=--include-path node_modules/normalize.css/ \
 SCSS_FILES=$(shell find $(SOURCE_DIR)/css -type f -name "*.scss")
 CSS_MIN=$(BUILD_DIR)/stylesheets/min.css
 
-RESUME=$(BUILD_DIR)/resume.pdf
-
-all: node_modules/.yarn-integrity $(HTML_FILES) $(CSS_MIN) $(RESUME)
+all: node_modules/.yarn-integrity $(HTML_FILES) $(CSS_MIN)
 
 $(BUILD_DIR)/%.html: $(SOURCE_DIR)/views/%.pug $(PUG_INCLUDES)
 	$(PUG) $(PUG_FLAGS) $< -o $(BUILD_DIR)
@@ -25,9 +23,6 @@ $(BUILD_DIR)/%.html: $(SOURCE_DIR)/views/%.pug $(PUG_INCLUDES)
 $(CSS_MIN): $(SCSS_FILES)
 	mkdir -p $(dir $@)
 	$(SCSS) $(SCSS_FLAGS) $(SOURCE_DIR)/css/site.scss > $@
-
-$(RESUME): $(SOURCE_DIR)/resume.pdf
-	cp $< $@
 
 node_modules/.yarn-integrity: package.json
 	yarn install
