@@ -3,12 +3,17 @@
 @import "imports/colours";
 @import "imports/mixins";
 
+@font-face {
+    font-family: akkurat-mono;
+    src: url(../fonts/akkurat-mono.woff);
+}
+
 html {
-	font-family: "Inconsolata";
+	font-family: "akkurat-mono";
 	color: $colour--body;
 	background-color: $colour--background;
 
-	font-size: 1.4em;
+	font-size: 1.2em;
 
 	@include media("<desktop") {
 		font-size: 4em;

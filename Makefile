@@ -18,7 +18,10 @@ CSS_MIN=$(BUILD_DIR)/stylesheets/min.css
 JS_FILES=$(shell find "$(SOURCE_DIR)/js" -maxdepth 1 -type f -name "*.js")
 JS_OUT=$(patsubst $(SOURCE_DIR)/js/%.js, $(BUILD_DIR)/js/%.js, $(JS_FILES))
 
-all: node_modules/.yarn-integrity $(HTML_FILES) $(CSS_MIN) $(JS_OUT)
+FONT_FILES=$(shell find "$(SOURCE_DIR)/fonts" -maxdepth 1 -type f)
+FONT_OUT=$(patsubst $(SOURCE_DIR)/fonts/%, $(BUILD_DIR)/fonts/%, $(FONT_FILES))
+
+all: node_modules/.yarn-integrity $(HTML_FILES) $(CSS_MIN) $(JS_OUT) $(FONT_OUT)
 
 $(BUILD_DIR)/%.html: $(SOURCE_DIR)/views/%.pug $(PUG_INCLUDES)
 	$(PUG) $(PUG_FLAGS) $< -o $(BUILD_DIR)
@@ -28,6 +31,10 @@ $(CSS_MIN): $(SCSS_FILES)
 	$(SCSS) $(SCSS_FLAGS) $(SOURCE_DIR)/css/site.scss > $@
 
 $(BUILD_DIR)/js/%.js: $(SOURCE_DIR)/js/%.js
+	mkdir -p $(dir $@)
+	cp $< $@
+
+$(BUILD_DIR)/fonts/%: $(SOURCE_DIR)/fonts/%
 	mkdir -p $(dir $@)
 	cp $< $@
 
