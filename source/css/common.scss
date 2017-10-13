@@ -13,22 +13,22 @@ html {
 	color: $colour--body;
 	background-color: $colour--background;
 
-	font-size: 1.2em;
+	font-size: 3em;
 
-	@include media("<desktop") {
-		font-size: 4em;
+	@include media("landscape") {
+		font-size: 2em;
 	}
 
-	@include media("<desktop", "landscape") {
-		font-size: 2em;
+	@include media(">=desktop") {
+		font-size: 1.2em;
 	}
 }
 
 main {
-	margin: 6.5em 0 0 6.5em;
+	margin: 2em;
 
-	@include media("<desktop") {
-		margin: 1em;
+	@include media(">=desktop") {
+		margin: 6.5em 0 0 6.5em;
 	}
 }
 
