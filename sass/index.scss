@@ -1,0 +1,51 @@
+@import "normalize";
+@import "imports/colours";
+@import "imports/mixins";
+
+@font-face {
+	font-family: larish;
+	src: url(../fonts/larishneue.woff);
+}
+
+html {
+	font-family: "larish";
+	background-color: $colour--background;
+	color: $colour--body;
+	font-size: 2.3rem;
+}
+
+body {
+	margin: 2em;
+}
+
+header {
+	margin-bottom: 1.5em;
+}
+
+aside {
+	margin-bottom: 0.8em;
+	font-size: 0.9em;
+}
+
+nav {
+	font-size: 0.9em;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+
+	color: $colour--link-unvisited;
+
+	&:visited {
+		color: $colour--link-visited;
+	}
+}
+
+@include selection() {
+	background-color: rgba($colour--selection, 0.2);
+}
