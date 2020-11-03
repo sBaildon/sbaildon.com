@@ -1,6 +1,6 @@
-SOURCE:=$(shell fd --type=file)
+.PHONY: release clean
 
-public: $(SOURCE)
+release:
 	zola build
 
 clean:
