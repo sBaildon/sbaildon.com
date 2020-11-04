@@ -3,23 +3,9 @@ packages:
   - zola
 sources:
   - https://git.sr.ht/~sbaildon/baildon.co
-secrets:
-  - 745b799c-0107-4717-91d3-231d15842fe3 # minio credentials
 environment:
   project: baildon.co
 tasks:
   - build: |
       cd ${project}
       make
-  - tooling: |
-      mkdir -p ~/.local/bin
-      curl -o ~/.local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc
-      chmod +x ~/.local/bin/mc
-      cat ~/.minio_credentials >> ~/.buildenv
-  - bucket: |
-      mc alias set nozdormu https://s3.baildon.co $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
-      mc mb --ignore-existing nozdormu/$project
-      mc policy set download nozdormu/$project
-  - deploy: |
-      cd ${project}/public
-      mc cp --recursive . nozdormu/$project
