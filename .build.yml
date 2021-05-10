@@ -1,18 +1,15 @@
-image: nixos/20.09
+image: alpine/latest
 packages:
-  - nixos.zola
-  - nixos.gnumake
+  - hugo
+oauth: pages.sr.ht/PAGES:RW
 sources:
   - https://git.sr.ht/~sbaildon/baildon.co
-secrets:
-  - 1f1a500b-dc44-4cf8-a166-9193885fe841
 environment:
-  project: baildon.co
+  site: baildon.co
 tasks:
-  - build: |
-      cd ${project}
-      make
-  - upload: |
-      cd ${project}
-      echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      rsync -r public/ deploy@baildon.co:/var/www/baildon.co/
+- package: |
+    cd $site
+    hugo
+    tar -C public -cvz . > ../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/sbaildon.srht.site -Fcontent=@site.tar.gz
