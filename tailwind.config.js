@@ -18,14 +18,15 @@ module.exports = {
       "./content/**/*.html"
     ],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
 	 colors: {
         'th-primary': withOpacity("--primary"),
         'th-secondary': withOpacity("--secondary"),
         'th-muted': withOpacity("--muted"),
-		'th-highlight': withOpacity("--highlight")
+		'th-highlight': withOpacity("--highlight"),
+		'th-background': withOpacity("--background")
       },
 	},
   },
