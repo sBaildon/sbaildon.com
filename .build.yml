@@ -1,6 +1,7 @@
 image: alpine/latest
 packages:
   - hugo
+  - npm
 oauth: pages.sr.ht/PAGES:RW
 sources:
   - https://git.sr.ht/~sbaildon/baildon.co
@@ -9,6 +10,7 @@ environment:
 tasks:
 - package: |
     cd $site
+    npm install
     hugo
     tar -C public -cvz . > ../site.tar.gz
 - upload: |
