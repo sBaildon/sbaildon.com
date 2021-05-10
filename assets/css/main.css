@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--primary: 24.3, 1%, 1%;
+		--secondary: 24.3, 77.2%, 48.2%;
+		--muted: 24.3, 3%, 40%;
+		--highlight: 14.3, 77.2%, 55%;
+	}
+}
+
+
+a {
+	@apply text-th-secondary hover:text-white hover:bg-th-secondary transition-colors duration-75;
+
+	& > * {
+		@apply hover:bg-th-secondary
+	}
+}
+
+.markdown {
+	@apply text-lg leading-normal;
+
+	& > * + *,  & li + li, & li > p + p {
+	  @apply mt-6;
+	}
+	& strong {
+	  @apply text-th-primary font-bold;
+	}
+	& a {
+	  @apply text-th-primary font-semibold;
+	}
+	& strong a {
+	  @apply font-bold;
+	}
+	& h2 {
+	  @apply leading-tight text-xl font-bold text-th-primary mb-2 mt-10;
+	}
+	& h3 {
+	  @apply leading-tight text-lg font-bold text-th-primary mt-8 -mb-2;
+	}
+	& code {
+	  @apply font-mono text-sm inline px-1;
+	}
+	& pre code {
+	  @apply block bg-th-primary p-4 rounded;
+	}
+	& blockquote {
+	  @apply border-l-4 pl-4 italic;
+	}
+	& ul, & ol {
+	  @apply pl-5;
+	  @screen sm {
+		@apply pl-10;
+	  }
+	}
+  }

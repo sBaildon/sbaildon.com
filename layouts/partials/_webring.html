@@ -1,0 +1,16 @@
+<section class="flex flex-col space-y-3">
+	<h3 class="font-bold">Posts from others</h3>
+	<section class="flex flex-col space-y-4">
+		{{range .Articles}}
+		<div class="bg-gray-100 p-3">
+			<h4>
+				<a href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
+			</h4>
+			<small>
+				via <a href="{{.SourceLink}}">{{.SourceTitle}}</a>
+			</small>
+			<small>{{.Date.Format "January 2, 2006"}}</small>
+		</div>
+		{{end}}
+	</section>
+</section>

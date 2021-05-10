@@ -1,2 +1,7 @@
-base_url = "https://baildon.co"
-compile_sass = true
+baseURL = "https://baildon.co"
+languageCode = "en-gb"
+title = "Sean Baildon"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = true
+[author]
+  name = "Sean Baildon"

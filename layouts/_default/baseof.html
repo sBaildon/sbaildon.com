@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  {{ $styles := resources.Get "css/main.css" | postCSS }}
+  {{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ else }}
+  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  {{ end }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="md:max-w-xl mt-8 mx-8 md:ml-24 md:mr-0 text-th-primary">
+  <div class="flex flex-col space-y-3">
+  	<nav class="flex-shrink-0 h-8">
+		{{ block "nav" . }}
+			{{ .Content }}
+		{{ end }}
+  	</nav>
+  	<main class="mt-16 md:mt-24">
+  		{{ block "main" . }}
+  		{{ .Content }}
+  		{{ end }}
+  	</main>
+  </div>
+</body>
+
+</html>
