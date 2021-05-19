@@ -24,11 +24,7 @@
 
 
 a {
-	@apply text-th-secondary hover:text-white hover:bg-th-secondary transition-colors duration-75;
-
-	& > * {
-		@apply hover:bg-th-secondary
-	}
+	@apply decoration-clone text-th-secondary hover:text-white hover:bg-th-secondary transition-colors duration-75;
 }
 
 .markdown {
