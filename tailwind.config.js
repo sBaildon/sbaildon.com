@@ -24,6 +24,7 @@ module.exports = {
       colors: {
         'th-primary': withOpacity("--primary"),
         'th-secondary': withOpacity("--secondary"),
+        'th-input': withOpacity("--input"),
         'th-muted': withOpacity("--muted"),
         'th-highlight': withOpacity("--highlight"),
         'th-background': withOpacity("--background")

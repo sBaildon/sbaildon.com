@@ -1,12 +1,13 @@
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/sbaildon"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/sbaildon', 'popupwindow')"
->
-	<fieldset class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-1 ">
-		<input type="email" class="bg-gray-100 py-1 px-2" placeholder="your@email.com" name="email" id="bd-email" />
+<form action="https://buttondown.email/api/emails/embed-subscribe/sbaildon" method="post" target="popupwindow"
+	onsubmit="window.open('https://buttondown.email/sbaildon', 'popupwindow')">
+	<fieldset
+		class="flex bg-gray-100 dark:bg-th-input rounded p-1 flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-1 ">
+		<input type="email"
+			class="py-1 bg-transparent px-2 outline-none ring-th-secondary placeholder-th-muted placeholder-opacity-50"
+			placeholder="your@email.com" name="email" id="bd-email" />
 		<input type="hidden" value="1" name="embed" />
-		<input type="submit" class="bg-th-secondary hover:bg-th-highlight cursor-pointer text-white font-semibold transition duration-75 py-1 px-2" value="Get updates" />
+		<input type="submit"
+			class="bg-th-secondary rounded hover:bg-th-highlight cursor-pointer text-white font-semibold transition duration-75 py-1 px-2"
+			value="Get updates" />
 	</fieldset>
 </form>

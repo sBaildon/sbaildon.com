@@ -1,7 +1,7 @@
 +++
 draft = true
 slug = "contactless-pos"
-title = "In Person payments with iOS Shortcuts, Stripe, and Serverless Functions"
+title = "Contactless payments with iOS Shortcuts, Stripe, and Serverless Functions"
 date = "2021-05-19"
 +++
 
@@ -11,21 +11,22 @@ You build one.
 
 [video]
 
-My partners and I are the business of delivering [choripanes](https://choripan.delivery) from our grill to your door—but for one weekend, we wanted to take them directly to the people.
+My best friend and I are in the business of [delivering choripanes](https://choripan.delivery)  from our grill to your door—but for one weekend, we wanted to take them directly to the people.
 
 We checked the forecast and spotted—due in 5 days, on a Saturday—the first predicted sunny day in a while. This would also be the first weekend Londoners could have social gatherings outside since the third Covid-19 lockdown. Perfect alignment!
 
 Our kitchen is online only so we’ve never had a reason to own a physical PoS. We thought about ordering one for the weekend, but it looked unlikely that we’d receive any in time.
 
-A unique advantage of ours is that we're vertically integrated. Taking inspiration from [Crave Cookie](https://www.indiehackers.com/product/crave-cookie), we built our own checkout, delivery tracking, and operations software to keep costs low and margins high. 
+A distinguishing advantage of ours is that we're vertically integrated. Taking inspiration from [Crave Cookie](https://www.indiehackers.com/product/crave-cookie), we built our own checkout, delivery tracking, and operations software to keep costs low and margins high. That means we have a bunch of software on hand to play with.
 
-So, instead, we pieced together a PoS using the tools already in our toolbox: Stripe, Cloudflare, and our iPhones.
+So, we pieced together a PoS using the tools already in our toolbox: Stripe, Cloudflare, and our iPhones.
 
 ## Tool one: Stripe
 
 Our checkout is optimised for our online order flow, it wasn’t going to be useful to us in the physical world. Instead of hacking changes onto what existed, we opted to use [Stripe Checkout](https://stripe.com/docs/payments/checkout) to relieve the burden of creating a throwaway experience. For those not in the know:
 
 > Checkout creates a secure, Stripe-hosted payment page that lets you collect payments quickly. It works across devices and can help increase your conversion
+>
 > — <cite>https://stripe.com/docs/payments/checkout</cite>
 
 Integrating Checkout is a little easier if used alongside Stripe's [Prices API](https://stripe.com/docs/api/prices).
@@ -118,13 +119,13 @@ async function handleRequest(request) {
 
 Publish both versions of your worker at once
 
-`wrangler publish && wrangler publish —env=prod`
+`wrangler publish && wrangler publish --env=prod`
 
 ## Tool three: iOS Shortcuts
 
-We have our product, and we have the mechanism to load the checkout—let's use iOS shortcuts to glue them together.
+We have our product, and we have the mechanism to load the checkout—let's use iOS Shortcuts to glue them together.
 
-As far as iOS shortcuts go, this one is simple:
+As far as shortcuts go, this one is simple:
 
 * A dictionary for some configuration values;
 * Ask for quantity of your product;
@@ -158,7 +159,7 @@ As far as iOS shortcuts go, this one is simple:
 
 1. Last action‚ `Show Notification`. Set the value to the output of the `Generate QR Code` action. You may need to use the magic wand prompt again.
 
-Run your action to see it play out. When the notification appears, you need to swipe down to expand—this is what you'll ask your customer to scan with their camera. 
+Run your action to see it play out. When the notification appears, you need to swipe down to expand—this is what you'll ask your customer to scan with their camera.
 
 Grab a friend or second phone and test the payment.
 
@@ -170,12 +171,6 @@ When you've confirmed everything works, change your dictionary values to the pro
 
 In the end we had a successful day. The weather turned out perfect, and the parks were packed as we had hoped. We sold choripan, made friends, and brought more attention to our brand. Our PoS solution worked wonderfully, even turning a few  heads when people expected us to be a cash-only operation.
 
-## Extra
+## One last thing
 
-We actually went a step further and set up Stripe webhooks with Zapier and Slack for real-time notifications, but in the end they weren't useful for us. The landing page was enough for us to know if we should hand over the goods.
-
-
-
-
-
-
+We actually went a step further and set up Stripe webhooks with Zapier and Slack for real-time notifications, but in the end they weren't useful for us. The landing page was enough confirmation to hand over the goods.
