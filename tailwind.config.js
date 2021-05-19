@@ -13,22 +13,22 @@ function withOpacity(variableName) {
 module.exports = {
   purge: {
     content: [
-	  "./layouts/**/*.html",
-	  "./content/**/*.md",
+      "./layouts/**/*.html",
+      "./content/**/*.md",
       "./content/**/*.html"
     ],
   },
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
-	 colors: {
+      colors: {
         'th-primary': withOpacity("--primary"),
         'th-secondary': withOpacity("--secondary"),
         'th-muted': withOpacity("--muted"),
-		'th-highlight': withOpacity("--highlight"),
-		'th-background': withOpacity("--background")
+        'th-highlight': withOpacity("--highlight"),
+        'th-background': withOpacity("--background")
       },
-	},
+    },
   },
   variants: {
     extend: {},
