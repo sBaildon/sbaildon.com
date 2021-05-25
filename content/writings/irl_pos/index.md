@@ -9,7 +9,7 @@ What do you do if you need to take contactless card payments in person, but don�
 
 You build one.
 
-[video]
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/554943818?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="stripe checkout as a pos"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 My best friend and I are in the business of [delivering choripanes](https://choripan.delivery)  from our grill to your door—but for one weekend, we wanted to take them directly to the people.
 
@@ -123,7 +123,7 @@ Publish both versions of your worker at once
 
 ## Tool three: iOS Shortcuts
 
-We have our product, and we have the mechanism to load the checkout—let's use iOS Shortcuts to glue them together.
+We have our product, and we have the mechanism to load the checkout—let's use [iOS Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334) to glue them together.
 
 As far as shortcuts go, this one is simple:
 
@@ -147,13 +147,13 @@ As far as shortcuts go, this one is simple:
 	* Add an `Authorization` header with the value `Bearer ${api_key}`, where `${api_key}` references the key in the dictionary
 	* Add a request body with the type `Form`
 	* Add `success_url` pointing towards your landing page
-	* Add `cancel_url` pointing anywhere you want (* I recommend  your `/404` or something you don't control like `https://google.com`)
+	* Add `cancel_url` pointing anywhere you want (* I recommend  your `/404` or something you don't control like `https://google.com` *)
 	* Add `payment_method` set to `card`
 	* Add `mode` set to `payment`
-	* Add `line_items[0][price]` to `$price_id`, referencing the price in the dictionary
-	* Add `line_items[0][quantity]` to `Provided Input`, where `Provided Input` is the output from the `Ask for Input` action
+	* Add `line_items[0][price]` set to `$price_id`, referencing the price in the dictionary
+	* Add `line_items[0][quantity]` set to `Provided Input`, where `Provided Input` is the output from the `Ask for Input` action
 
-1. Add a  `Get Dictionary Value` action, set `Key` to `ID`, and keep `Dictionary` as `Contents of URL`
+1. Add a  `Get Dictionary Value` action, set `Key` to `id`, and leave `Contents of URL` alone
 
 1. Add a `Generate QR Code` action, set the value to be `${worker_url}?session_id=${dictionary_value}`, where `${worker_url}` references the url in the dictionary, and `${dictionary_value}` is the output from the previous action. (Tap the magic wand to highlight output variables)
 
@@ -163,9 +163,9 @@ Run your action to see it play out. When the notification appears, you need to s
 
 Grab a friend or second phone and test the payment.
 
-When you've confirmed everything works, change your dictionary values to the production equivalents
+When you've confirmed everything works, change the dictionary values to your production equivalents
 
-* I recommend a `404` or page you don't own for the `cancel_url` so you know the payment failed. If your customer can show you your own landing page after payment, you know it was successful.
+\* *I recommend a `404` or page you don't own for the `cancel_url` so you know the payment failed. If your customer can show you your own landing page after payment, you know it was successful.*
 
 ## Wrap Up
 
