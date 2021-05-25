@@ -30,7 +30,7 @@ a {
 .markdown {
 	@apply text-lg leading-normal;
 
-	& > * + *,  & li + li, & li > p + p {
+	& > * + *,  & li > p + p {
 	  @apply mt-6;
 	}
 	& strong {
@@ -44,6 +44,7 @@ a {
 	}
 	& code {
 	  @apply font-mono text-sm inline px-2 py-1;
+	  background-color: hsl(24.3, 3%, 96.5%);
 	}
 	& pre {
 	  @apply block p-4 rounded;
@@ -52,11 +53,20 @@ a {
 	  @apply border-l-4 pl-4 italic;
 	}
 	& ul, & ol {
-	  @apply pl-5 sm:pl-10;
+	  @apply pl-5 sm:pl-6;
+	}
+	& li + li {
+	  @apply mt-2;
+	}
+	& ul {
+	  @apply list-disc;
+	}
+	& ol {
+	  @apply list-decimal;
 	}
 }
 
-/* Background */ .chroma { color: #4d4d4c; background-color: hsl(24.3, 3%, 97.5%);}
+/* Background */ .chroma { color: #4d4d4c; background-color: hsl(24.3, 3%, 96.5%);}
 /* Other */ .chroma .x { color: #4d4d4c }
 /* Error */ .chroma .err { color: #c82829 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
