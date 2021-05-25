@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 slug = "contactless-pos"
 title = "Contactless payments with iOS Shortcuts, Stripe, and Serverless Functions"
 date = "2021-05-19"
