@@ -169,6 +169,8 @@ When you've confirmed everything works, change the dictionary values to your pro
 
 ## Wrap Up
 
+![The Team](media/team.jpeg)
+
 In the end we had a successful day. The weather turned out perfect, and the parks were packed as we had hoped. We sold choripan, made friends, and brought more attention to our brand. Our PoS solution worked wonderfully, even turning a few  heads when people expected us to be a cash-only operation.
 
 ## One last thing
