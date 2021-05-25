@@ -45,6 +45,13 @@ a {
 	& code {
 	  @apply font-mono text-sm inline px-2 py-1;
 	  background-color: hsl(24.3, 3%, 96.5%);
+
+	  @media (prefers-color-scheme: dark) {
+		background-color: hsl(24.3, 3%, 6.5%);
+	  }
+	}
+	& pre > code {
+		background-color: rgba(0,0,0,0);
 	}
 	& pre {
 	  @apply block p-4 rounded;
