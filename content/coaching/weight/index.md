@@ -1,9 +1,9 @@
 +++
 title = "Weight Management"
-slug = "weight-management"
+slug = "weight"
 +++
 
-Gaining and losing weight is considered a solved problem: eat in a caloric surplus to gain weight; eat in a deficit to lose weight. 
+Gaining and losing weight is considered a solved problem: eat in a caloric surplus to gain weight; eat in a deficit to lose weight.
 
 Anyone who tells you otherwise is incorrect. You only need look to the masters of body manipulation—bodybuilders and actors—to see proof that energy balance is the mechanism for weight management.
 
@@ -14,7 +14,7 @@ Energy balance is the mechanism, you need to employ a tool for it to work. There
 ## Calorie Counting
 Conceptually the most simple: read nutrition labels, weigh the food you're eating, tally up the calories, and make sure the total falls within your goal range.
 
-Calorie counting can be difficult at first because it requires significant discipline to weigh your food and makes eating out risky. It gets easier over time as you learn to guesstimate portions more accurately. 
+Calorie counting can be difficult at first because it requires significant discipline to weigh your food and makes eating out risky. It gets easier over time as you learn to guesstimate portions more accurately.
 
 ## Fasting
 Fasting is all about reducing total calories consumed throughout the day by minimising the window where you're actively eating.
@@ -27,7 +27,7 @@ By avoiding foods that are associated with poor satiety, LCHF diets are designed
 Ketogenic diets are a specialised version of LCHF that almost eliminate carbohydrates because it's believed a diet devoid of carbohydrates convinces the body to burn fat as for fuel.
 
 ## Food group elimination
-This is a bit of catch-all for different types of diets. 
+This is a bit of catch-all for different types of diets.
 
 - Cutting sugar from your diet encourages you to eat more satiating food, stop wasting calories on foods that provide no nutritional value, and even actively cause you to feel hungry.
 - Of the three macronutrients fat contains 9 calories per gram, over double protein and carbohydrates, so eating foods with less fat content allows you eat higher volumes of other foods

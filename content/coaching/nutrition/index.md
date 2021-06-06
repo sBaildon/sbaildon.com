@@ -3,7 +3,7 @@ title = "Nutrition"
 slug = "nutrition"
 +++
 
-Take the time to learn the foundations of nutrition. Food will be with you forever—a strong foundational will help you make more informed choices.
+Take the time to learn the foundations of nutrition. Food will be with you forever—a strong foundation will help you make more informed choices.
 
 There are some common misconceptions we should dispel immediately:
 
