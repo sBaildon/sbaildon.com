@@ -21,6 +21,10 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+	  fontFamily: {
+        'display': ['GT Sectra'],
+		'mono': ['akkurat-mono']
+      },
       colors: {
         'th-primary': withOpacity("--primary"),
         'th-secondary': withOpacity("--secondary"),

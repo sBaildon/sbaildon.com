@@ -7,8 +7,8 @@
 <div class="flex flex-col space-y-6 mb-16">
 	<section class="flex flex-col space-y-6">
 		<header class="flex flex-col space-y-1">
-			<h1 id="title" class="font-bold text-4xl md:text-5xl md:leading-tight">{{ .Title }}</h1>
-			<span id="date" class="text-th-muted text-xl">{{ .Date.Format "January 2, 2006" }}</span>
+			<h1 id="title" class="font-black font-display text-3xl md:leading-tight">{{ .Title }}</h1>
+			<span id="date" class="font-mono text-th-muted text-md">{{ .Date.Format "January 2, 2006" }}</span>
 		</header>
 		<article class="markdown">
 			{{ .Content }}
@@ -19,10 +19,10 @@
 
 	<section>
 		<div class="flex flex-col space-y-3 md:items-start">
-			<p class="text-th-muted">Expect posts on engineering, bootstrapping, and ramblings</p>
+			<p class="text-th-muted text-md font-mono">Expect posts on engineering, bootstrapping, and ramblings</p>
 			<div>
 				{{ partial "sub_form.html" . }}
-				<a href="/writings/index.xml">or subscribe with rss</a>
+				<a href="/writings/index.xml" class="font-mono text-md">or subscribe with rss</a>
 			</div>
 		</div>
 	</section>
