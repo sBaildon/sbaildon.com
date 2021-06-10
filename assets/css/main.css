@@ -54,7 +54,7 @@ a {
 	  @apply leading-tight text-lg font-bold text-th-primary mt-8 -mb-2;
 	}
 	& code {
-	  @apply font-mono text-sm inline px-2 py-1;
+	  @apply font-mono text-sm inline px-2 py-1 break-all;
 	  background-color: hsl(24.3, 3%, 96.5%);
 
 	  @media (prefers-color-scheme: dark) {
@@ -65,10 +65,10 @@ a {
 		background-color: rgba(0,0,0,0);
 	}
 	& pre {
-	  @apply block p-4 rounded;
+	  @apply block p-4 rounded overflow-scroll;
 	}
 	& blockquote {
-	  @apply border-l-4 pl-4 italic;
+	  @apply border-l-4 pl-4 italic overflow-scroll;
 	}
 	& ul, & ol {
 	  @apply pl-5 sm:pl-6;
