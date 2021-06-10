@@ -9,17 +9,24 @@ What do you do if you need to take contactless card payments in person, but don�
 
 You build one.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/554943818?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="stripe checkout as a pos"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-My best friend and I are in the business of [delivering choripanes](https://choripan.delivery)  from our grill to your door—but for one weekend, we wanted hand them out directly to the people.
+<figure>
+	<div style="padding:56.25% 0 0 0;position:relative;">
+		<iframe src="https://player.vimeo.com/video/554943818?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="stripe checkout as a pos"></iframe>
+	</div>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<figcaption>tldw: use iOS Shortcuts to prompt for what's being sold; make an API call to stripe; turn the response into a QR code; customer scans QR code; Apple Pay!</figcaption>
+</figure>
 
-We checked the forecast and spotted—due in 5 days, on a Saturday—the first predicted sunny day in a while. This would also be the first weekend Londoners could have social gatherings outside since the third Covid-19 lockdown. Perfect!
+My best friend and I are in the business of [delivering choripanes](https://choripan.delivery)  from our grill to your door—but for one weekend, we wanted hand them out directly to the people of London.
+
+We checked the forecast and spotted, due in 5 days, on a Saturday, the first predicted sunny day in a while; and, best of all, it fell on the first weekend Londoners could have social gatherings outside since the third Covid-19 lockdown. Perfect!
 
 Our kitchen is online only so we’ve never had a reason to own a physical PoS. We thought about ordering one for the weekend, but it looked unlikely that we’d receive any in time.
 
 A distinguishing advantage of ours is that we're vertically integrated. Taking inspiration from [Crave Cookie](https://www.indiehackers.com/product/crave-cookie), we built our own checkout, delivery tracking, and operations software to keep costs low and margins high. That means we have a bunch of software on hand to play with.
 
-So, we pieced together a PoS using the tools already in our toolbox: Stripe, Cloudflare, and our iPhones.
+So we decided to piece together a PoS using the tools already in our toolbox: Stripe, Cloudflare, and our iPhones.
 
 ## Tool one: Stripe
 
@@ -45,7 +52,7 @@ We already host our DNS with Cloudflare—using their serverless function servic
 
 ### Creating the worker project
 
-Download [wrangler](https://github.com/cloudflare/wrangler)— Cloudflare's CLI application for managing workers.
+Download [wrangler](https://github.com/cloudflare/wrangler), Cloudflare's CLI application for managing workers.
 
 Create a workers project
 
