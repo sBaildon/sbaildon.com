@@ -39,7 +39,7 @@ a {
 }
 
 .markdown {
-	@apply text-lg leading-normal font-sans;
+	@apply text-base md:text-lg leading-normal font-sans;
 
 	& > * + *,  & li > p + p {
 	  @apply mt-6;
