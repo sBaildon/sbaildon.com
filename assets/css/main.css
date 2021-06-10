@@ -82,6 +82,9 @@ a {
 	& ol {
 	  @apply list-decimal;
 	}
+	& figure > figcaption {
+		@apply text-th-muted text-sm italic mt-2;
+	}
 }
 
 /* Background */ .chroma { color: #4d4d4c; background-color: hsl(24.3, 3%, 96.5%);}
