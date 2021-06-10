@@ -141,36 +141,59 @@ As far as shortcuts go, this one is simple:
 * Turn the result into a QR code.
 
 
-[Get the shortcut](https://www.icloud.com/shortcuts/411cf26e37ea477da8d81be32f0a1ac6), or follow along to create it yourself.
+[Get the shortcut](https://www.icloud.com/shortcuts/411cf26e37ea477da8d81be32f0a1ac6). Or, in case of bit rot, here's what the shortcut should look like.
 
 
-1. First up is the dictionary. Add a `Dictionary` action with the keys `api_key`, `price_id`, and `worker_url` and set their values. Use your test values for now.
+```yaml
+# Dictionary
+api_key: sk_test_abc
+price_id: price_abc
+worker_url: https://worker-url.dev
+```
 
-1. Then comes input. Add a new `Ask for Input` action, set the type to `Number`, and the prompt to `How many?`
+```yaml
+# Ask for Input
+Input type: number
+Prompt: "How many?"
+```
 
-1. Now a `Get Contents of URL` action. The URL should be `https://api.stripe.com/v1/checkout/sessions`
-	* Expand "Show More"
-	* Set `Method` to `POST`
-	* Add an `Authorization` header with the value `Bearer ${api_key}`, where `${api_key}` references the key in the dictionary
-	* Add a request body with the type `Form`
-	* Add `success_url` pointing towards your landing page
-	* Add `cancel_url` pointing anywhere you want (* I recommend  your `/404` or something you don't control like `https://google.com` *)
-	* Add `payment_method` set to `card`
-	* Add `mode` set to `payment`
-	* Add `line_items[0][price]` set to `$price_id`, referencing the price in the dictionary
-	* Add `line_items[0][quantity]` set to `Provided Input`, where `Provided Input` is the output from the `Ask for Input` action
+```yaml
+# Get Contents of URL
+URL: "https://api.stripe.com/v1/checkout/session"
+Method: POST
+Headers:
+	Authorization: Bearer $api_key
+Request Body (Form):
+	success_url: "https://your.website"
+	cancel_url: "https://indiehackers.com"
+	payment_method: "card"
+	mode: "payment"
+	line_items[0][price]: $price_id
+	line_items[0][quantity]: $ProvidedInput
+```
 
-1. Add a  `Get Dictionary Value` action, set `Key` to `id`, and leave `Contents of URL` alone
+```yaml
+# Get Dictionary Value
+Get: Value
+For: "id"
+In: ${Contents of URL}
+```
 
-1. Add a `Generate QR Code` action, set the value to be `${worker_url}?session_id=${dictionary_value}`, where `${worker_url}` references the url in the dictionary, and `${dictionary_value}` is the output from the previous action. (Tap the magic wand to highlight output variables)
+```yaml
+# Generate QR Code
+Generate From: ${worker_url}?session_id=${Dictionary Value}
+```
 
-1. Last action‚ `Show Notification`. Set the value to the output of the `Generate QR Code` action. You may need to use the magic wand prompt again.
+```yaml
+# Show Notification
+Value: ${QR Code}
+```
 
-Run your action to see it play out. When the notification appears, you need to swipe down to expand—this is what you'll ask your customer to scan with their camera.
+Once you're set up, run your action to see it play out.
 
-Grab a friend or second phone and test the payment.
+Swipe down on the notification and grab a friend to point their camera at the QR code.
 
-When you've confirmed everything works, change the dictionary values to your production equivalents
+If you're using test API keys you can complete the payment without spending a penny, and then when you've confirmed everything works, update the dictionary at the start of the shortcut to your production keys and you'll be ready to go!
 
 \* *I recommend a `404` or page you don't own for the `cancel_url` so you know the payment failed. If your customer can show you your own landing page after payment, you know it was successful.*
 
