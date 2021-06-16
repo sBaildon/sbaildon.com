@@ -4,11 +4,15 @@ title = "Sean Baildon"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = true
 pygmentsUseClasses = true
+
 [author]
 name = "Sean Baildon"
+
 [markup]
-[markup.highlight]
-style = "solarized-light"
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+
+	[markup.highlight]
+	style = "solarized-light"
+
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+		unsafe = true
