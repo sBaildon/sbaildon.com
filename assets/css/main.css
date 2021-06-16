@@ -38,6 +38,11 @@ a {
 	@apply decoration-clone text-th-secondary hover:text-white hover:bg-th-secondary transition-colors duration-75;
 }
 
+figure > div {
+	padding: 56.25% 0 0 0;
+	position: relative;
+}
+
 .markdown {
 	@apply text-base md:text-lg leading-normal font-sans;
 
