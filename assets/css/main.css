@@ -35,7 +35,7 @@
 }
 
 a {
-	@apply decoration-clone text-th-secondary hover:text-white hover:bg-th-secondary transition-colors duration-75;
+	@apply decoration-clone text-th-secondary border-b-2 border-transparent hover:border-th-secondary;
 }
 
 figure > div {
