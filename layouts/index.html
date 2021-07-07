@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main aria-role="main">
+<main aria-role="main" class="max-w-md flex flex-col gap-y-24">
 	<div class="flex flex-col space-y-5">
 		<header>
 			<h1 class="text-3xl">Sean Baildon</h1>
@@ -14,5 +14,10 @@
 			<a href="mailto:hello@baildon.co">email</a>
 		</nav>
 	</div>
+	<picture>
+		<source srcset="/images/sean.webp" type="image/webp"></source>
+		<source srcset="/images/sean.png" type="image/png"></source>
+		<img src="/images/sean.png" alt="Chillaxing, eating, and working at a desk">
+	</picture>
 </main>
 {{ end }}
