@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 
-<div class="flex flex-col space-y-6 mb-16">
+<div class="flex flex-col space-y-12 mb-16">
 	<section class="flex flex-col space-y-6">
 		<header class="flex flex-col space-y-1">
 			<h1 id="title" class="font-black font-display text-3xl md:leading-tight">{{ .Title }}</h1>
@@ -15,15 +15,20 @@
 		</article>
 	</section>
 
-	<hr class="border border-th-muted border-opacity-25">
+	<hr class="-th-muted -opacity-25">
 
 	<section>
-		<div class="flex flex-col space-y-3 md:items-start">
-			<p class="text-th-muted text-md font-mono">Expect posts on engineering, bootstrapping, and ramblings</p>
-			<div>
+		<div class="flex flex-row items-end w-full max-w-max">
+			<div class="flex flex-col -mb-1 min-w-min w-full w-10/12">
+				<p class="text-th-muted text-md font-mono mb-2 pr-0 sm:pr-8 md:pr-8">Expect posts on engineering, bootstrapping, and ramblings</p>
 				{{ partial "sub_form.html" . }}
 				<a href="/index.xml" class="font-mono text-md">or subscribe with rss</a>
 			</div>
+			<picture class="filter w-60 -ml-16 mb-6 hidden sm:block filter drop-shadow-sm flex-shrink">
+				<source srcset="/images/call_to_action.webp" type="image/webp"></source>
+				<source srcset="/images/call_to_action.png" type="image/png"></source>
+				<img src="/images/call_to_action.png" alt="Subscribe to updates">
+			</picture>
 		</div>
 	</section>
 </div>
