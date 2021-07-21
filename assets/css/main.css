@@ -49,6 +49,12 @@ figure > div {
 	& > * + *,  & li > p + p {
 	  @apply mt-6;
 	}
+	& a {
+	  @apply break-words break-all;
+	  & code {
+		  @apply border-b-2 border-transparent hover:border-th-secondary;
+	  }
+	}
 	& strong {
 	  @apply font-bold;
 	}
