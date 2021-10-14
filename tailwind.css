@@ -32,6 +32,19 @@
 		font-weight: 900;
 		src: url("/fonts/GT-Sectra-Black.woff") format("woff");
 	}
+#subscribe {
+	& div, & picture {
+		grid-row: 1 / 2;
+		align-self: center;
+	}
+
+	& picture {
+		grid-column: 9 / 13;
+	}
+
+	& div {
+		grid-column: 1 / 10;
+	}
 }
 
 a {
