@@ -11,13 +11,12 @@
 			</header>
 		</article>
 		<ol class="flex flex-col items-start space-y-8">
-			<!-- Ranges through content/posts/*.md -->
 			{{ range .Pages }}
-			<li class="">
+			<li>
 				<h2 class="text-xl md:text-2xl font-display font-bold tracking-wide leading-snug">
 					<a href="{{.Permalink}}">{{.Title}}</a>
 				</h2>
-				<span class="text-th-muted text-md font-mono">{{.Date.Format "January 2, 2006"}}</span>
+				<span class="text-th-muted text-sm md:text-base font-mono">{{.Date.Format "January 2, 2006"}}</span>
 			</li>
 			{{ end }}
 		</ol>

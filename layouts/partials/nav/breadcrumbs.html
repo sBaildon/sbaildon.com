@@ -1,6 +1,6 @@
 {{ $baseurl := .Site.BaseURL }}
 {{ $fullurl := print ( .RelPermalink | replaceRE "[^/]+/$" "") }}
-<ol class="breadcrumbs font-mono text-md flex flex-row space-x-2">
+<ol class="breadcrumbs font-mono text-base flex flex-row space-x-2">
   <li><a href="/" class="crumb">~sbaildon</a></li>
   {{ range $index, $element := split $fullurl "/" }}
   {{ $.Scratch.Add "path" $element }}
