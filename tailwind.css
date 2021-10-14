@@ -96,7 +96,7 @@ figure > div {
 		background-color: rgba(0,0,0,0);
 	}
 	& pre {
-		@apply block p-4 rounded overflow-scroll;
+		@apply block p-5 -mx-5 rounded overflow-scroll;
 	}
 	& blockquote {
 		@apply border-l-4 pl-4 italic overflow-scroll;
