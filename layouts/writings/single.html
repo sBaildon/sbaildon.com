@@ -21,15 +21,16 @@
 		<div class="mt-40">
 			<div class="flex flex-col space-y-1">
 				<div class="flex flex-col">
-					<p class="text-th-muted text-md font-mono mb-2 pr-0 sm:w-[70%]">Expect posts on engineering, bootstrapping, and ramblings</p>
+					<p class="hidden sm:block text-th-muted text-md font-mono mb-2 pr-0 sm:w-[70%]">Expect posts on engineering, bootstrapping, and ramblings</p>
 					{{ partial "sub_form.html" . }}
 				</div>
 				<a href="/index.xml" class="max-w-max font-mono text-md">or subscribe with rss</a>
 			</div>
 		</div>
 		<picture class="pointer-events-none filter drop-shadow-sm">
-			<source srcset="/images/call_to_action.webp" type="image/webp"></source>
-			<source srcset="/images/call_to_action.png" type="image/png"></source>
+			<source srcset="/images/call_to_action.webp" type="image/webp" media="(min-width: 768px)"></source>
+			<source srcset="/images/call_to_action.png" type="image/png" media="(min-width: 768px)"></source>
+			<source srcset="/images/holding.png" type="image/png"></source>
 			<img src="/images/call_to_action.png" alt="Subscribe to updates">
 		</picture>
 	</section>
