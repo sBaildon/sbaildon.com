@@ -23,15 +23,15 @@
 	}
 
 	@font-face {
-        font-family: akkurat-mono;
-        font-weight: 400;
-        src: url("/fonts/akkuratmono-regular.woff2") format("woff");
-    }
+		font-family: akkurat-mono;
+		font-weight: 400;
+		src: url("/fonts/akkuratmono-regular.woff2") format("woff");
+	}
 	@font-face {
-        font-family: 'GT Sectra';
-        font-weight: 900;
-        src: url("/fonts/GT-Sectra-Black.woff") format("woff");
-    }
+		font-family: 'GT Sectra';
+		font-weight: 900;
+		src: url("/fonts/GT-Sectra-Black.woff") format("woff");
+	}
 }
 
 a {
@@ -47,51 +47,51 @@ figure > div {
 	@apply text-base md:text-lg leading-normal font-sans;
 
 	& > * + *,  & li > p + p {
-	  @apply mt-6;
+		@apply mt-6;
 	}
 	& a {
-	  @apply break-words break-all;
-	  & code {
-		  @apply border-b-2 border-transparent hover:border-th-secondary;
-	  }
+		@apply break-words break-all;
+		& code {
+			@apply border-b-2 border-transparent hover:border-th-secondary;
+		}
 	}
 	& strong {
-	  @apply font-bold;
+		@apply font-bold;
 	}
 	& h2 {
-	  @apply leading-tight text-xl font-bold text-th-primary mb-2 mt-10;
+		@apply leading-tight text-xl font-bold text-th-primary mb-2 mt-10;
 	}
 	& h3 {
-	  @apply leading-tight text-lg font-bold text-th-primary mt-8 -mb-2;
+		@apply leading-tight text-lg font-bold text-th-primary mt-8 -mb-2;
 	}
 	& code {
-	  @apply font-mono text-sm inline px-2 py-1 break-all;
-	  background-color: hsl(24.3, 3%, 96.5%);
+		@apply font-mono text-sm inline px-2 py-1 break-all;
+		background-color: hsl(24.3, 3%, 96.5%);
 
-	  @media (prefers-color-scheme: dark) {
-		background-color: hsl(24.3, 3%, 6.5%);
-	  }
+		@media (prefers-color-scheme: dark) {
+			background-color: hsl(24.3, 3%, 6.5%);
+		}
 	}
 	& pre > code {
 		background-color: rgba(0,0,0,0);
 	}
 	& pre {
-	  @apply block p-4 rounded overflow-scroll;
+		@apply block p-4 rounded overflow-scroll;
 	}
 	& blockquote {
-	  @apply border-l-4 pl-4 italic overflow-scroll;
+		@apply border-l-4 pl-4 italic overflow-scroll;
 	}
 	& ul, & ol {
-	  @apply pl-5 sm:pl-6;
+		@apply pl-5 sm:pl-6;
 	}
 	& li + li {
-	  @apply mt-2;
+		@apply mt-2;
 	}
 	& ul {
-	  @apply list-disc;
+		@apply list-disc;
 	}
 	& ol {
-	  @apply list-decimal;
+		@apply list-decimal;
 	}
 	& figure > figcaption {
 		@apply text-th-muted text-sm italic mt-2;
@@ -182,7 +182,7 @@ figure > div {
 /* TextWhitespace */ .chroma .w { color: #ffffff; text-decoration: underline }
 
 @media (prefers-color-scheme: dark) {
-	/* Background */ .chroma { color: #c5c8c6; background-color: #1d1f21 }
+/* Background */ .chroma { color: #c5c8c6; background-color: #1d1f21 }
 /* Other */ .chroma .x { color: #c5c8c6 }
 /* Error */ .chroma .err { color: #cc6666 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -263,6 +263,6 @@ figure > div {
 /* GenericSubheading */ .chroma .gu { color: #81a2be }
 /* GenericTraceback */ .chroma .gt { color: #c5c8c6 }
 /* GenericUnderline */ .chroma .gl { color: #c5c8c6; text-decoration: underline }
-/* TextWhitespace */ .chroma .w { color: #1d1f21; text-decoration: underline }
+	/* TextWhitespace */ .chroma .w { color: #1d1f21; text-decoration: underline }
 
 }
