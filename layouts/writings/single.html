@@ -17,22 +17,28 @@
 
 	<hr class="th-muted opacity-25 mt-16 ">
 
-	<section id="subscribe" class="grid grid-cols-12 grid-rows-1 items-end">
-		<div class="mt-40">
+	<section id="subscribe" class="flex flex-col items-center md:grid md:grid-cols-12 md:grid-rows-1 md:items-end">
+		<div class="mt-12 md:mt-40 self-stretch">
 			<div class="flex flex-col space-y-1">
 				<div class="flex flex-col">
 					<p class="hidden sm:block text-th-muted text-md font-mono mb-2 pr-0 sm:w-[70%]">Expect posts on engineering, bootstrapping, and ramblings</p>
 					{{ partial "sub_form.html" . }}
 				</div>
-				<a href="/index.xml" class="max-w-max font-mono text-md">or subscribe with rss</a>
+				<a href="/index.xml" class="max-w-max font-mono text-md hidden md:block">or subscribe with rss</a>
 			</div>
 		</div>
-		<picture class="pointer-events-none filter drop-shadow-sm">
+		<picture class="pointer-events-none filter drop-shadow-sm h-52 md:h-auto overflow-hidden">
 			<source srcset="/images/call_to_action.webp" type="image/webp" media="(min-width: 768px)"></source>
 			<source srcset="/images/call_to_action.png" type="image/png" media="(min-width: 768px)"></source>
 			<source srcset="/images/holding.png" type="image/png"></source>
 			<img src="/images/call_to_action.png" alt="Subscribe to updates">
 		</picture>
+
+		<div class="md:hidden w-4/6 flex flex-col space-y-4">
+			<hr class="th-muted opacity-10 drop-shadow">
+			<a href="/index.xml" class="max-w-max font-mono text-md block self-center">subscribe with rss</a>
+		</div>
+
 	</section>
 </div>
 
