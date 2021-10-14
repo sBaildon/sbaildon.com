@@ -4,7 +4,7 @@ WEBPS = $(patsubst static/images/%.png, static/images/%.webp, $(PNGS))
 compress: $(WEBPS)
 
 serve:
-	hugo server --buildDrafts --bind="0.0.0.0"
+	hugo server --buildDrafts --bind="0.0.0.0" --baseURL 192.168.1.155
 
 tailwind:
 	node_modules/.bin/tailwind -i tailwind.css -o assets/main.css --watch --postcss

@@ -41,7 +41,7 @@
 
 #subscribe {
 	& picture {
-		@apply w-[60%] max-w-[200px];
+		@apply w-[50%] max-w-[200px];
 		margin-top: -7px;
 	}
 	@media screen and (min-width: 768px) {
@@ -104,10 +104,10 @@ figure > div {
 		background-color: rgba(0,0,0,0);
 	}
 	& pre {
-		@apply block p-5 -mx-5 rounded overflow-scroll;
+		@apply block p-4 md:p-5 md:-mx-5 rounded overflow-scroll;
 	}
 	& blockquote {
-		@apply border-l-4 pl-4 italic overflow-scroll;
+		@apply border-l-4 md:px-5 p-2 px-4 md:-mx-5 italic overflow-scroll bg-gray-700 bg-opacity-25 rounded;
 	}
 	& ul, & ol {
 		@apply pl-5 sm:pl-6;
