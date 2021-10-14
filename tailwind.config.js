@@ -1,44 +1,42 @@
 function withOpacity(variableName) {
-  // const hsler = /hsl\((.+)\)/i
+	// const hsler = /hsl\((.+)\)/i
 
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `hsla(var(${variableName}), ${opacityValue})`
-    }
+	return ({ opacityValue }) => {
+		if (opacityValue !== undefined) {
+			return `hsla(var(${variableName}), ${opacityValue})`
+		}
 
-    return `hsl(var(${variableName}))`
-  }
+		return `hsl(var(${variableName}))`
+	}
 }
 
 module.exports = {
-  purge: {
-    content: [
-      "./layouts/**/*.html",
-      "./content/**/*.md",
-      "./content/**/*.html"
-    ],
-  },
-  darkMode: 'media', // or 'media' or 'class'
-  theme: {
-    extend: {
-	  fontFamily: {
-        'display': ['GT Sectra'],
-		'mono': ['akkurat-mono']
-      },
-      colors: {
-        'th-primary': withOpacity("--primary"),
-        'th-secondary': withOpacity("--secondary"),
-        'th-input': withOpacity("--input"),
-        'th-muted': withOpacity("--muted"),
-        'th-highlight': withOpacity("--highlight"),
-        'th-background': withOpacity("--background")
-      },
-    },
-  },
-  variants: {
-    extend: {
-	  borderWidth: ['hover'],
-     },
-  },
-  plugins: [],
+	content: [
+		"./layouts/**/*.html",
+		"./content/**/*.md",
+		"./content/**/*.html"
+	],
+	darkMode: 'media', // or 'media' or 'class'
+	theme: {
+		extend: {
+			fontFamily: {
+				'display': ['GT Sectra'],
+				'mono': ['akkurat-mono']
+			},
+			colors: {
+				'th-primary': withOpacity("--primary"),
+				'th-secondary': withOpacity("--secondary"),
+				'th-input': withOpacity("--input"),
+				'th-muted': withOpacity("--muted"),
+				'th-highlight': withOpacity("--highlight"),
+				'th-background': withOpacity("--background")
+			},
+		},
+	},
+	variants: {
+		extend: {
+			borderWidth: ['hover'],
+		},
+	},
+	plugins: [],
 };
