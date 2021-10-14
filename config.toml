@@ -12,7 +12,3 @@ name = "Sean Baildon"
 
 	[markup.highlight]
 	style = "solarized-light"
-
-	[markup.goldmark]
-		[markup.goldmark.renderer]
-		unsafe = true
