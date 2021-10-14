@@ -7,16 +7,14 @@
 	<div class="flex flex-col space-y-8">
 		<article>
 			<header>
-				<h1 class="text-3xl">{{.Title}}</h1>
+				<h1 class="text-2xl md:text-3xl font-bold tracking-wide">{{.Title}}</h1>
 			</header>
-			<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-			{{.Content}}
 		</article>
-		<ol class="flex flex-col items-start space-y-4">
+		<ol class="flex flex-col items-start space-y-8">
 			<!-- Ranges through content/posts/*.md -->
 			{{ range .Pages }}
 			<li class="">
-				<h2 class="text-2xl font-display leading-snug">
+				<h2 class="text-xl md:text-2xl font-display font-bold tracking-wide leading-snug">
 					<a href="{{.Permalink}}">{{.Title}}</a>
 				</h2>
 				<span class="text-th-muted text-md font-mono">{{.Date.Format "January 2, 2006"}}</span>
