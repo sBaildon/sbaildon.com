@@ -39,29 +39,6 @@
 	}
 }
 
-#subscribe {
-	& picture {
-		@apply w-[50%] max-w-[200px];
-		margin-top: -7px;
-	}
-	@media screen and (min-width: 768px) {
-		& div, & picture {
-			grid-row: 1 / 2;
-			align-self: center;
-		}
-
-		& picture {
-			@apply w-auto mt-0;
-			grid-column: 9 / 13;
-		}
-
-		& div {
-			grid-column: 1 / 10;
-		}
-
-	}
-}
-
 a {
 	@apply decoration-clone text-th-secondary border-b-2 border-transparent hover:border-th-secondary;
 }
