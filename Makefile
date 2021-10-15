@@ -7,7 +7,7 @@ serve:
 	hugo server --buildDrafts --bind="0.0.0.0" --baseURL 192.168.1.155
 
 tailwind:
-	node_modules/.bin/tailwind -i tailwind.css -o assets/main.css --watch --postcss
+	npm run watch
 
 static/images/%.webp: static/images/%.png
 	cwebp -q 100 $< -o $@
