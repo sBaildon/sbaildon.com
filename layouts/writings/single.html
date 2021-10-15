@@ -8,20 +8,20 @@
 	<section class="flex flex-col space-y-6">
 		<header class="flex flex-col space-y-1">
 			<h1 id="title" class="font-bold font-display text-2xl md:text-3xl tracking-wide md:leading-tight">{{ .Title }}</h1>
-			<span id="date" class="font-mono text-th-muted text-sm md:text-base">{{ .Date.Format "January 2, 2006" }}</span>
+			<span id="date" class="font-mono text-slate-500 dark:text-stone-400 text-sm md:text-base">{{ .Date.Format "January 2, 2006" }}</span>
 		</header>
 		<article class="markdown">
 			{{ .Content }}
 		</article>
 	</section>
 
-	<hr class="th-muted opacity-25 mt-16 ">
+	<hr class="th-muted dark:opacity-25 mt-16 ">
 
 	<section id="subscribe" class="flex flex-col items-center md:grid md:grid-cols-12 md:items-center">
 		<div class="mt-12 md:mt-40 self-stretch md:row-start-1 md:row-end-2 md:col-start-1 md:col-span-9">
 			<div class="flex flex-col space-y-1">
 				<div class="flex flex-col">
-					<p class="hidden sm:block text-th-muted text-base font-mono mb-2 pr-0 sm:w-[70%]">Expect posts on engineering, bootstrapping, and ramblings</p>
+					<p class="hidden sm:block text-slate-500 dark:text-stone-400 text-base font-mono mb-2 pr-0 sm:w-[70%]">Expect posts on engineering, bootstrapping, and ramblings</p>
 					{{ partial "sub_form.html" . }}
 				</div>
 				<a href="/index.xml" class="max-w-max font-mono text-base hidden md:block">or subscribe with rss</a>
@@ -37,7 +37,7 @@
 		</picture>
 
 		<div class="md:hidden w-4/6 flex flex-col space-y-4">
-			<hr class="th-muted opacity-10 drop-shadow">
+			<hr class="th-muted opacity-50 dark:opacity-10 drop-shadow-sm">
 			<a href="/index.xml" class="max-w-max font-mono text-base block self-center">subscribe with rss</a>
 		</div>
 

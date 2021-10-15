@@ -1,15 +1,3 @@
-function withOpacity(variableName) {
-	// const hsler = /hsl\((.+)\)/i
-
-	return ({ opacityValue }) => {
-		if (opacityValue !== undefined) {
-			return `hsla(var(${variableName}), ${opacityValue})`
-		}
-
-		return `hsl(var(${variableName}))`
-	}
-}
-
 module.exports = {
 	content: [
 		"./layouts/**/*.html",
@@ -22,15 +10,7 @@ module.exports = {
 			fontFamily: {
 				'display': ['GT Sectra'],
 				'mono': ['akkurat-mono']
-			},
-			colors: {
-				'th-primary': withOpacity("--primary"),
-				'th-secondary': withOpacity("--secondary"),
-				'th-input': withOpacity("--input"),
-				'th-muted': withOpacity("--muted"),
-				'th-highlight': withOpacity("--highlight"),
-				'th-background': withOpacity("--background")
-			},
+			}
 		},
 	},
 	variants: {
