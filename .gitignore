@@ -2,3 +2,4 @@ node_modules/
 public/
 resources/
 assets/main.css
+.hugo_build.lock
