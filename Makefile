@@ -4,7 +4,7 @@ WEBPS = $(patsubst static/images/%.png, static/images/%.webp, $(PNGS))
 compress: $(WEBPS)
 
 serve:
-	hugo server --buildDrafts --bind="0.0.0.0" --baseURL 192.168.1.155
+	hugo server --buildDrafts --bind="0.0.0.0" --baseURL $(shell ipconfig getifaddr en0)
 
 tailwind:
 	npm run watch
