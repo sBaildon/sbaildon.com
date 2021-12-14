@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>{{ .Title }}</title>
+		<meta name="description" content="When in doubt, backdash out" />
 		{{ $style := resources.Get "main.css" | resources.Fingerprint "sha256" }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 		{{ with .OutputFormats.Get "rss" -}}
