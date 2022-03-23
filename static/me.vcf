@@ -8,9 +8,9 @@ KIND:individual
 LANG:en-GB
 EMAIL;type=INTERNET;type=personal;type=pref:sean@baildon.co
 TEL;type=CELL;type=TEXT;type=VOICE;type=pref:+44 7969 638193
+X-SOCIALPROFILE;type=Telegram;x-user=sbaildon:x-apple:sbaildon
 X-SOCIALPROFILE;type=twitter:http://twitter.com/sbaildon
 X-SOCIALPROFILE;type=GitHub;x-user=sbaildon:x-apple:sbaildon
-X-SOCIALPROFILE;type=Telegram;x-user=sbaildon:x-apple:sbaildon
 URL;type=homepage;type=pref:https://baildon.co
 BDAY:1991-09-09
 GENDER:M
